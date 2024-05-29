@@ -1,0 +1,1 @@
+ /Users/linhlv-d6/Desktop/Flutter\ Projects/template_app_bloc/.dart_tool/flutter_build/8495bb936f181da16398ed45d654f299/native_assets.yaml: 
