@@ -7,7 +7,6 @@ import 'package:template_app_bloc/blocs/theme/theme_state.dart';
 import 'package:template_app_bloc/constants/color_constants.dart';
 import 'package:template_app_bloc/generated/locale_keys.g.dart';
 import 'package:template_app_bloc/routes/routes.dart';
-import 'package:template_app_bloc/views/auth/login/login_view.dart';
 
 class PushToLoginButton extends StatelessWidget {
   const PushToLoginButton({super.key});

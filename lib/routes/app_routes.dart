@@ -16,7 +16,7 @@ class AppRoutes {
   static final GoRouter _router = GoRouter(
       debugLogDiagnostics: true,
       navigatorKey: _rootNavigatorKey,
-      initialLocation: Routes.NAVIGATION,
+      initialLocation: Routes.ROOT,
       routes: [
         GoRoute(
           path: Routes.ROOT,

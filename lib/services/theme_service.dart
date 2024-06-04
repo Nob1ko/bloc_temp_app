@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:template_app_bloc/blocs/theme/theme_state.dart';
 import 'package:template_app_bloc/constants/color_constants.dart';
@@ -7,7 +8,8 @@ class ThemeService {
   static bool useDeviceTheme = true;
   static bool isDark = false;
 
-  static Future<void> setTheme({required bool useDeviceTheme, required bool isDark}) async {
+  static Future<void> setTheme(
+      {required bool useDeviceTheme, required bool isDark}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setBool('useDeviceTheme', useDeviceTheme);
     await prefs.setBool('isDark', isDark);
@@ -17,6 +19,16 @@ class ThemeService {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     useDeviceTheme = prefs.getBool('useDeviceTheme') ?? true;
     isDark = prefs.getBool('isDark') ?? false;
+  }
+
+  static bool isDarkMode() {
+    var brightness =
+        SchedulerBinding.instance.platformDispatcher.platformBrightness;
+    if (ThemeService.useDeviceTheme) {
+      return brightness == Brightness.dark;
+    } else {
+      return ThemeService.isDark;
+    }
   }
 
   static CupertinoThemeData buildTheme(ThemeState state) {

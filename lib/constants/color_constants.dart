@@ -24,4 +24,15 @@ class ColorConstants {
 
   static Color darkBackgroundColorActivated = const Color(0xFF3a3a3c);
   static Color lightBackgroundColorActivated = const Color(0xFFd1d1d6);
+
+  static Color primaryBrown = const Color(0xFF7A574C);
+  static Color brown_1 = const Color(0xFF493F33);
+  static Color brown_2 = const Color(0xFF6D5D4A);
+  static Color brown_3 = const Color(0xFFA58E7A);
+  static Color brown_4 = const Color(0xFF493F33);
+  static Color brown_5 = const Color(0xFF493F33);
+  static Color brown_6 = const Color(0xFF493F33);
+  static Color brown_7 = const Color(0xFF493F33);
+  static Color brown_8 = const Color(0xFF493F33);
+  static Color brown_9 = const Color(0xFF493F33);
 }

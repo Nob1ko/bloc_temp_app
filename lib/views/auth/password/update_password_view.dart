@@ -15,7 +15,6 @@ import 'package:template_app_bloc/generated/locale_keys.g.dart';
 import 'package:template_app_bloc/helpers/app_helper.dart';
 import 'package:template_app_bloc/models/http_response_model.dart';
 import 'package:template_app_bloc/routes/routes.dart';
-import 'package:template_app_bloc/views/auth/login/login_view.dart';
 import 'package:template_app_bloc/views/auth/password/widgets/update_password_button.dart';
 import 'package:template_app_bloc/widgets/custom_scaffold.dart';
 part "update_password_view_mixin.dart";

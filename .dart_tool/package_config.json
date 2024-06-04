@@ -290,6 +290,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "google_fonts",
+      "rootUri": "file:///Users/linhlv-d6/.pub-cache/hosted/pub.dev/google_fonts-6.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "http",
       "rootUri": "file:///Users/linhlv-d6/.pub-cache/hosted/pub.dev/http-1.2.1",
       "packageUri": "lib/",
@@ -722,7 +728,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-29T03:06:07.537732Z",
+  "generated": "2024-05-30T04:29:33.651679Z",
   "generator": "pub",
   "generatorVersion": "3.3.4"
 }

@@ -23,6 +23,8 @@ import 'package:template_app_bloc/views/auth/login/widgets/login_button.dart';
 import 'package:template_app_bloc/views/auth/login/widgets/push_to_register_button.dart';
 import 'package:template_app_bloc/views/auth/login/widgets/title_widget.dart';
 import 'package:template_app_bloc/views/auth/verify/verify_view.dart';
+import 'package:template_app_bloc/widgets/discover_post.dart';
+import 'package:template_app_bloc/widgets/swipe_card.dart';
 part "login_view_mixin.dart";
 
 class LoginView extends StatefulWidget {
@@ -98,7 +100,12 @@ class _LoginViewState extends State<LoginView> with LoginViewMixin {
                                   },
                                 ),
                                 const SizedBox(height: 10),
-                                const PushToRegisterButton()
+                                const PushToRegisterButton(),
+                               const SizedBox(height: 100,
+                                child: SwipeCard(),
+                                ),
+                              const  DiscoverPost()
+
                               ],
                             );
                           },

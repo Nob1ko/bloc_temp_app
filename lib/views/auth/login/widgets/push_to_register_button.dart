@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:template_app_bloc/blocs/theme/theme_bloc.dart';
 import 'package:template_app_bloc/blocs/theme/theme_state.dart';
 import 'package:template_app_bloc/constants/color_constants.dart';
+import 'package:template_app_bloc/extensions/text_style_extension.dart';
 import 'package:template_app_bloc/generated/locale_keys.g.dart';
 import 'package:template_app_bloc/routes/routes.dart';
 
@@ -22,9 +23,7 @@ class PushToRegisterButton extends StatelessWidget {
           },
           child: Text(
             LocaleKeys.register,
-            style: TextStyle(
-              color: themeState.isDark ? ColorConstants.darkPrimaryIcon : ColorConstants.lightPrimaryIcon,
-            ),
+            style: context.h1
           ).tr(),
         );
       },
